@@ -1,41 +1,68 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>Anh Vũ đâyyy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Anh Vũ</h1>
-						<!-- <p>Không code nữa &nbsp;&bull;&nbsp; Gamer &nbsp;&bull;&nbsp; Multimedia</p> -->
-						<p>Không code nữa &nbsp;&bull;&nbsp; Muốn làm hàng không <span style="font-size: 12px;">ăn hàng ở không</span></p>
-						<nav>
-							<ul>
-								<li><a href="https://www.facebook.com/profile.php?id=100028490123619" class="icon brands fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-								<!-- <li><a href="https://www.tiktok.com/@nhungpham2602?_t=8erDs6v03HO&_r=1" class="icon brands fa-tiktok" target="_blank"><span class="label">Tiktok</span></a></li>
+<head>
+	<title>Anh Vũ đâyyy</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="static/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1>Anh Vũ</h1>
+				<!-- <p>Không code nữa &nbsp;&bull;&nbsp; Gamer &nbsp;&bull;&nbsp; Multimedia</p> -->
+				<p>Không code nữa &nbsp;&bull;&nbsp; Muốn làm hàng không <span style="font-size: 12px;">ăn hàng ở
+						không</span></p>
+				<nav>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100028490123619"
+								class="icon brands fa-facebook" target="_blank"><span class="label">Facebook</span></a>
+						</li>
+
+						<li><a class="fas fa-piggy-bank" href="#" onclick="openPopup()"><span
+									class="label">Banking</span></a></li>
+						<li><a href="" class="fas fa-address-card" target="_blank"><span class="label">Youtube</span></a></li>
+						<!-- <li><a href="https://www.tiktok.com/@nhungpham2602?_t=8erDs6v03HO&_r=1" class="icon brands fa-tiktok" target="_blank"><span class="label">Tiktok</span></a></li>
 								<li><a href="https://instagram.com/pthn2602?igshid=MzRlODBiNWFlZA==" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 								<li><a href="https://youtube.com/@RosePham2602?si=gmW0UQVBi9nIzcty" class="icon brands fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
 								<li><a href="mailto:rosepham260202@gmail.com" class="icon solid fa-envelope"><span class="label" target="_blank">Email</span></a></li> -->
-							</ul>
-						</nav>
-					</header>
+						<div id="popup" style="display: none;">
+							<!-- <p>This is the content of the pop-up window.</p> -->
+							<div><img src="static/css/images/qr.jpg" width="300" height="340"></div>
+							<buton style="background-color: red; border-radius: 30%;
+										padding: 12px 12px 12px 12px;">
+								<a onclick="closePopup()">Close</a>
+							</buton>
+						</div>
+					</ul>
+				</nav>
+			</header>
 
-			</div>
 		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+	</div>
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+		function openPopup() {
+			document.getElementById("popup").style.display = "block";
+		}
+
+		function closePopup() {
+			document.getElementById("popup").style.display = "none";
+		}
+	</script>
+</body>
+
 </html>
