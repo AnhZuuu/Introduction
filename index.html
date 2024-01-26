@@ -20,65 +20,76 @@
 		<div id="overlay"></div>
 		<div id="main">
 
-			
+
 			<header id="header">
 
 				<h1>Anh Vũ</h1>
-				
+
 				<p>Không code nữa &nbsp;&bull;&nbsp; Muốn làm hàng không <span style="font-size: 12px;">ăn hàng ở
 						không</span></p>
 				<nav>
-					
+
 					<ul>
 						<li style="--clr:#2483ff;">
-						 <a href="https://www.facebook.com/profile.php?id=100028490123619" target="_blank">
-							<i class="fab fa-facebook"></i>
-						   <span>Facebook</span>
-						 </a>
-					   </li>
-					 
-					   <li style="--clr:#fff200;" onclick="openPopup()">
-						 <a>
-							<i class="fas fa-piggy-bank"></i>
-						   <span>Banking</span>
-						 </a>
-					   </li>
-					 
-					   <li style="--clr:#ff253f;">
-						 <a href="#">
-							<i class="fas fa-spider"></i>
-						   <span>Spider</span>
-						 </a>
-					   </li>
-					 
-					   <li style="--clr:#25d366;" onclick="openTV()">
-						 <a>
-							<i class="fas fa-home"></i>
-						   <span>Home</span>
-						 </a>
-					   </li>
-					 
-					   <li style="--clr:#f32ec8;">
-						 <a href="#">
-							<i class="fas fa-cloud-sun-rain"></i>
-						   <span>Search</span>
-						 </a>
-					   </li>
-					  </ul>
-					  <div id="popup" style="display: none;margin-top: 30px;">
+							<a href="https://www.facebook.com/profile.php?id=100028490123619" target="_blank">
+								<i class="fab fa-facebook"></i>
+								<span>Facebook</span>
+							</a>
+						</li>
+
+						<li style="--clr:#fff200;" onclick="openPopup()">
+							<a>
+								<i class="fas fa-piggy-bank"></i>
+								<span>Banking</span>
+							</a>
+						</li>
+
+						<li style="--clr:#ff253f;">
+							<a href="#">
+								<i class="fas fa-spider"></i>
+								<span>Spider</span>
+							</a>
+						</li>
+
+						<li style="--clr:#25d366;" onclick="openTV()">
+							<a>
+								<i class="fas fa-home"></i>
+								<span>Home</span>
+							</a>
+						</li>
+
+						<li style="--clr:#f32ec8;" onclick="openPopup2()">
+							<a href="#">
+								<i class="fas fa-cloud-sun-rain"></i>
+								<span>Screen</span>
+							</a>
+						</li>
+					</ul>
+
+					<div id="popup" style="display: none;margin-top: 30px;">
 						<div><img src="static/css/images/qr.jpg" width="300" height="340"></div>
 						<div class="glowButtonWrapper">
 							<button class="glowButton" onclick="closePopup()">
-							<a class="buttonText">Close</a>
-						</button>
+								<a class="buttonText">Close</a>
+							</button>
 						</div>
 					</div>
+
+					<div style="display:none;" class="glowButtonWrapper" id="gl-bt-wr">
+						<button style="display:none; background-color: aliceblue;" class="glowButton"id="gl-bt" >
+							<a id="screen" style="display:none" class="buttonText" onclick="closePopup2()"></a>
+						</button>
+					</div>
+					<!-- <button id="screen" style="display:none" class="button-close" onclick="closePopup2()">
+						123
+					</button> -->
+
 				</nav>
 			</header>
 
 		</div>
 	</div>
-	
+
 </body>
 
 </html>
