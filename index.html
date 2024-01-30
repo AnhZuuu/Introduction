@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 
 <head>
@@ -8,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="static/css/main.css" />
 	<link rel="stylesheet" href="static/css/icon.css" />
+	<link rel="stylesheet" href="static/css/glitch.css" />
 	<link rel="shortcut icon" href="static/css/images/meo.png" />
 	<noscript>
 		<link rel="stylesheet" href="static/css/noscript.css" />
@@ -64,7 +64,9 @@
 								<span>Screen</span>
 							</a>
 						</li>
+						
 					</ul>
+
 
 					<div id="popup" style="display: none;margin-top: 30px;">
 						<div><img src="static/css/images/qr.jpg" width="300" height="340"></div>
@@ -75,14 +77,18 @@
 						</div>
 					</div>
 
-					<div style="display:none;" class="glowButtonWrapper" id="gl-bt-wr">
+					<div style="display:none; " class="glitch" id="gl-bt-wr">
+						<button style="display:none;" anim="glitch" id="gl-bt" onclick="closePopup2()">
+							<a id="screen" style="display:none"></a>
+						</button>
+					</div>
+
+					<!-- <div style="display:none;" class="glowButtonWrapper" id="gl-bt-wr">
 						<button style="display:none; background-color: aliceblue;" class="glowButton"id="gl-bt" >
 							<a id="screen" style="display:none" class="buttonText" onclick="closePopup2()"></a>
 						</button>
-					</div>
-					<!-- <button id="screen" style="display:none" class="button-close" onclick="closePopup2()">
-						123
-					</button> -->
+					</div> -->
+
 
 				</nav>
 			</header>

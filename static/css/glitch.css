@@ -1,0 +1,33 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+@keyframes glitch {
+    50% {
+        transform: skew(180deg);
+    }
+}
+
+[anim="glitch"]:not(.toggled) {
+    animation: glitch var(--ease-elastic-in-1) 6ms infinite;
+}
+
+.glitch {
+    button {
+        all: unset;
+        background-color: black ;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        /* text-transform: uppercase; */
+        letter-spacing: 0.04em;
+        border: 1px solid var red;
+        box-shadow: 0 0 4px hsl(12, 100%, 60%);
+        cursor: pointer;
+        perspective: 1000px;
+        /* position: relative; */
+        overflow: hidden;
+        font-family: "aglet-mono-variable", sans-serif;
+        font-variation-settings: "wght" 400;
+        display: block;
+        /* flex-wrap: wrap; */
+    }
+}
