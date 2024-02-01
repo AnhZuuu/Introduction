@@ -1,3 +1,9 @@
+function goBack() {
+  window.location.assign("../index.html");
+}
+
+
+//----------------------------------------------------------------
 !(function (e, t, n) {
     function i(n, s) {
       if (!t[n]) {
