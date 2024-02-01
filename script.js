@@ -11,6 +11,8 @@ anims.map(clickTog);
 window.onload = function () { document.body.classList.remove('is-preload'); }
 		window.ontouchmove = function () { return false; }
 		window.onorientationchange = function () { document.body.scrollTop = 0; }
+		
+		
 		function openPopup() {
 			document.getElementById("popup").style.display = "block";
 		}
@@ -22,11 +24,7 @@ window.onload = function () { document.body.classList.remove('is-preload'); }
 			window.open('https://anhzuuu.github.io/happynewyear/', 'Popup', 'width=600,height=400');
 		}
 
-        // function getDeviceSize() {
-        //     let height = screen.height;
-        //     let width = screen.width;
-        //     document.getElementById("screen").innerHTML =  width + "x"+ height + "px";
-        // }
+       
         function openPopup2() {
 			document.getElementById("screen").style.display = "block";
             document.getElementById("gl-bt").style.display = "flex";
@@ -45,4 +43,9 @@ window.onload = function () { document.body.classList.remove('is-preload'); }
             document.getElementById("gl-bt").style.display = "none";
             document.getElementById("gl-bt-wr").style.display = "none";
             
+		}
+
+
+		function getSpider() {
+			window.location.assign("spider/spider.html");
 		}
